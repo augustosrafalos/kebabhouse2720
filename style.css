@@ -226,3 +226,178 @@ header h1{
     background:#ffd700;
     transform:scale(1.05);
 }
+/* ===== MENUKORT DESIGN ===== */
+
+.menu-page{
+    max-width:900px;
+    margin:0 auto;
+    background:#111;
+    border-radius:20px;
+    padding:50px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(212,175,55,.35);
+}
+
+
+/* Titel */
+
+.menu-page h1{
+    text-align:center;
+    color:#d4af37;
+    font-size:60px;
+    margin-bottom:40px;
+    position:relative;
+    z-index:2;
+}
+
+
+/* Overskrifter */
+
+.section-title{
+    color:#d4af37;
+    font-size:34px;
+    margin-top:40px;
+    margin-bottom:15px;
+    border-bottom:2px solid #d4af37;
+    padding-bottom:10px;
+    position:relative;
+    z-index:2;
+}
+
+
+/* Mad linjer */
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:18px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    position:relative;
+    z-index:2;
+}
+
+
+.item div:first-child{
+    font-size:24px;
+}
+
+
+.item small{
+    display:block;
+    color:#bbb;
+    margin-top:6px;
+}
+
+
+.item div:last-child{
+    color:#d4af37;
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+/* Tilbage knap */
+
+.back{
+    display:block;
+    width:260px;
+    margin:50px auto 0;
+    text-align:center;
+    background:#d4af37;
+    color:black;
+    padding:15px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    z-index:3;
+}
+
+.back:hover{
+    background:#ffd700;
+}
+
+
+/* ===== MADBILLEDER ===== */
+
+
+/* Løgringe */
+
+.rings{
+    position:absolute;
+    width:150px;
+    top:-20px;
+    left:-20px;
+    opacity:.25;
+    z-index:1;
+}
+
+
+/* Pommes */
+
+.fries{
+    position:absolute;
+    width:150px;
+    bottom:-20px;
+    right:-20px;
+    opacity:.25;
+    z-index:1;
+}
+
+
+/* Nuggets fjernes fordi billedet har baggrund */
+
+.nuggets{
+    display:none;
+}
+
+
+/* Menuknap på forsiden */
+
+.menu-button{
+    display:inline-block;
+    background:#d4af37;
+    color:black;
+    padding:15px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu-button:hover{
+    background:#ffd700;
+    transform:scale(1.05);
+}
+
+
+/* Mobil */
+
+@media(max-width:700px){
+
+    .menu-page{
+        padding:25px;
+    }
+
+    .menu-page h1{
+        font-size:42px;
+    }
+
+    .item div:first-child{
+        font-size:18px;
+    }
+
+    .item div:last-child{
+        font-size:18px;
+    }
+
+    .rings,
+    .fries{
+        width:90px;
+        opacity:.2;
+    }
+
+}
