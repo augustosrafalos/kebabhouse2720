@@ -222,9 +222,6 @@ header h1{
     transition:.3s;
 }
 
-.menu-button:hover{
-    background:#ffd700;
-    transform:scale(1.05);
 }
 /* ===== MENUKORT DESIGN ===== */
 
@@ -320,84 +317,29 @@ header h1{
 }
 
 
-/* ===== MADBILLEDER ===== */
-
-
-/* Løgringe */
+/* MENU BILLEDER */
 
 .rings{
     position:absolute;
-    width:150px;
-    top:-20px;
-    left:-20px;
-    opacity:.25;
+    width:120px;
+    top:20px;
+    left:20px;
+    opacity:.15;
     z-index:1;
 }
 
-
-/* Pommes */
 
 .fries{
     position:absolute;
-    width:150px;
-    bottom:-20px;
-    right:-20px;
-    opacity:.25;
+    width:120px;
+    bottom:20px;
+    right:20px;
+    opacity:.15;
     z-index:1;
 }
 
-
-/* Nuggets fjernes fordi billedet har baggrund */
 
 .nuggets{
     display:none;
 }
-
-
-/* Menuknap på forsiden */
-
-.menu-button{
-    display:inline-block;
-    background:#d4af37;
-    color:black;
-    padding:15px 35px;
-    border-radius:12px;
-    text-decoration:none;
-    font-size:24px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.menu-button:hover{
-    background:#ffd700;
-    transform:scale(1.05);
-}
-
-
-/* Mobil */
-
-@media(max-width:700px){
-
-    .menu-page{
-        padding:25px;
-    }
-
-    .menu-page h1{
-        font-size:42px;
-    }
-
-    .item div:first-child{
-        font-size:18px;
-    }
-
-    .item div:last-child{
-        font-size:18px;
-    }
-
-    .rings,
-    .fries{
-        width:90px;
-        opacity:.2;
-    }
-
 }
